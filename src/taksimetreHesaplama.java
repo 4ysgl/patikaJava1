@@ -12,10 +12,10 @@ Taksimetre açılış ücreti 10 TL'dir.
      */
         Scanner inp=new Scanner(System.in);
 
-    double km,fiyat;
+    double km ;double fiyat=10;
         System.out.println("kaç kilometre oldugunu girin: ");
         km = inp.nextDouble();
-        fiyat= km*2.20;
+        fiyat= fiyat+(km*2.20);
 
         String yaz = (fiyat <20) ? "taksimetre tutarı 20 tldir" : "taksimetre tutarı " +fiyat+"tl dir";
         System.out.println(yaz);
